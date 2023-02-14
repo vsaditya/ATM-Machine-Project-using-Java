@@ -55,14 +55,14 @@ public class Account {
 		return savingBalance;
 	}
 	
-	/*Calculate Checking Account WithDrawal*/
+	/*Calculate Current Account WithDrawal*/
 	
 	public double calcCurrentWithdraw(double amount) {
 		currentBalance=(currentBalance-amount);
 		return currentBalance;
 	}
 	
-	/*Calculate Checking Account Deposit*/
+	/*Calculate Current Account Deposit*/
 	
 	public double calcCurrentDeposit(double amount) {
 		currentBalance=(currentBalance+amount);
@@ -76,7 +76,7 @@ public class Account {
 		return savingBalance;
 	}
 	
-	/*Customer Checking account Withdraw input*/
+	/*Customer Current account Withdraw input*/
 	
 	public void getCurrentWithdrawInput() {
 		System.out.println("Current Account Balance:"+ moneyFormat.format(currentBalance));
@@ -101,7 +101,7 @@ public class Account {
 			
 			if((savingBalance-amount) >=0 ) {
 				calcSavingWithdraw(amount);
-				System.out.println("New Saving Account Balance:" + savingBalance +"/n");
+				System.out.println("New Saving Account Balance:" + savingBalance );
 			}else {
 				System.out.println("Balance cannot be negetive");
 			}
