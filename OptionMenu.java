@@ -42,7 +42,7 @@ public class OptionMenu extends Account {
 					getAccountType();
 				}
 			}
-			System.out.println("Wrong pin number or customer number");
+			System.out.println("Wrong customer number or pin number");
 		}while(x==1);
 	}
 	
@@ -108,7 +108,6 @@ public class OptionMenu extends Account {
 			
 		case 4:
 			System.out.println("Thank you for using this ATM, bye.");
-			getAccountType();
 			break;
 			
 		default:
@@ -145,7 +144,6 @@ public class OptionMenu extends Account {
 				
 			case 4:
 				System.out.println("Thank you for using this ATM, bye.");
-				getAccountType();
 				break;
 				
 			default:
