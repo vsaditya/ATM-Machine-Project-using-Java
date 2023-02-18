@@ -40,9 +40,13 @@ public class OptionMenu extends Account {
 			for(Entry<Integer, Integer> entry : data.entrySet()) {
 				if(entry.getKey() == getCustomerNumber() && entry.getValue()== getPinNumber()) {
 					getAccountType();
+				else{
+					System.out.println("Wrong customer number or pin number");
+					break;
+				}
 				}
 			}
-			System.out.println("Wrong customer number or pin number");
+			
 		}while(x==1);
 	}
 	
